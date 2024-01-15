@@ -31,6 +31,7 @@ const Checkout = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (orderDetails.full_name && orderDetails.address && orderDetails.email) {
+            setError(null)
             dispatch(sumbitOrder(orderDetails));
         } else {
             setError('Please fill in all required fields')

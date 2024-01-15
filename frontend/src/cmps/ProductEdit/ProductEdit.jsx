@@ -67,25 +67,6 @@ const ProductEdit = ({ product }) => {
                 {error && <div>{error}</div>}
             </Box>
         </div>
-        
-        // <form className="product-edit" onSubmit={handleSubmit}>
-        //     <h4>{product ? 'Edit Product' : 'Add Product'}</h4>
-        //     <label>
-        //         Title:
-        //         <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
-        //     </label>
-        //     <label>
-        //         Type:
-        //         <select value={type} onChange={(e) => setType(e.target.value)}>
-        //             <option value="vegetables">Vegetables</option>
-        //             <option value="cleaning">Cleaning</option>
-        //             <option value="meatAndFish">Meat and Fish</option>
-        //             <option value="backery">Backery</option>
-        //             <option value="dairy">Dairy</option>
-        //         </select>
-        //     </label>
-        //     <button type="submit">{product ? 'Edit Product' : 'Add Product'}</button>
-        // </form>
     );
 };
 

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState } from 'react';
 import ProductPreviewSelect from '../ProductPreviewSelect/ProductPreviewSelect';
 import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';

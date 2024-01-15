@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import React, { useContext, useEffect, useRef } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
 import './App.css';
 import './styles/styles.scss'
 

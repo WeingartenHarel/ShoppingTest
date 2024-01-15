@@ -41,7 +41,6 @@ async function submit(order) {
     try {
         const { full_name, address, email, products, id } = order;
         const result = await knex('orders')
-            .returning('*') 
             .insert({
                 id,
                 full_name,

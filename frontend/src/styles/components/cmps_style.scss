@@ -4,9 +4,6 @@
     flex-direction: column;
     align-items: center;
 
-   
-
-
     .selected-products{
         display: flex;
         gap: 10px;
@@ -26,7 +23,7 @@
             flex-direction: row;
     
        }
-
+       
         .inputs-container {
             display: flex;
             gap: 10px;

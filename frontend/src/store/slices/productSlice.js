@@ -62,6 +62,7 @@ const productSlice = createSlice({
         },
         filterProducts: (state, action) => {
             const products = action.payload
+            console.log('filterProducts products',products)
             if (products.length === 0) return
             const prodcutsReduced = products.reduce((acc, product) => {
                 const type = product.type;

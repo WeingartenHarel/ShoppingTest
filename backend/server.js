@@ -2,13 +2,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const path = require('path')
-const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const app = express()
 const http = require('http').createServer(app);
         
 // Express App Config
-app.use(cookieParser())
 app.use(bodyParser.json());
 app.use(session({
   secret: 'secret',
@@ -34,8 +32,6 @@ const userProduct = require('./api/user/product.routes')
 // config App routes
 app.use('/api/product', userProduct)
 
-
-// config main Route, return index.html
 app.get('/**', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })

@@ -13,6 +13,9 @@ const MainHome = ({ }) => {
     }, [])
     
     useEffect(() => {
+        console.log('products',products)
+        console.log('products',products.length)
+        if (products.length === 0) return
         dispacth(filterProducts(products))
         dispacth(setTotalItems(products))
     }, [products])

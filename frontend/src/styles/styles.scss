@@ -1,0 +1,16 @@
+
+//BASIC SETUP{
+@import 'basics/base.scss';
+@import 'basics/helpers';
+
+//SETUP
+@import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+
+@import 'components/cmps_style.scss';
+
+
+//Views
+@import 'views/app-footer.scss';
